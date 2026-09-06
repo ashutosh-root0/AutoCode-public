@@ -393,8 +393,10 @@ class AmpLanguageModel implements LanguageModelV1 {
     return body;
   }
 
-  /** A single non-streaming `/invoke` call. Returns the raw stop_reason so the
-   * continuation loop can tell a `max_tokens` cutoff from a natural end. */
+  /*
+   * A single non-streaming `/invoke` call. Returns the raw stop_reason so the
+   * continuation loop can tell a `max_tokens` cutoff from a natural end.
+   */
   private async _invokeOnce(params: {
     system?: string;
     messages: AmpMessage[];
@@ -754,8 +756,7 @@ export default class AmpProvider extends BaseProvider {
 
     // Per-call output cap for chunked continuation (positive integer only).
     const rawChunk = Number(read('AMP_CHUNK_MAX_TOKENS'));
-    const chunkMaxTokens =
-      Number.isFinite(rawChunk) && rawChunk > 0 ? Math.floor(rawChunk) : DEFAULT_CHUNK_MAX_TOKENS;
+    const chunkMaxTokens = Number.isFinite(rawChunk) && rawChunk > 0 ? Math.floor(rawChunk) : DEFAULT_CHUNK_MAX_TOKENS;
 
     assertHttpsUrl(authUrl as string, 'AMP_AUTH_URL');
     assertHttpsUrl(modelEndpoint as string, 'AMP_MODEL_ENDPOINT');
