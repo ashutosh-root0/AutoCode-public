@@ -89,10 +89,10 @@ export const ChatBox: React.FC<ChatBoxProps> = (props) => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="rotate(-45)"
           >
-            <stop offset="0%" stopColor="#b44aff" stopOpacity="0%"></stop>
-            <stop offset="40%" stopColor="#b44aff" stopOpacity="80%"></stop>
-            <stop offset="50%" stopColor="#b44aff" stopOpacity="80%"></stop>
-            <stop offset="100%" stopColor="#b44aff" stopOpacity="0%"></stop>
+            <stop offset="0%" stopColor="#FFFF00" stopOpacity="0%"></stop>
+            <stop offset="40%" stopColor="#FFFF00" stopOpacity="80%"></stop>
+            <stop offset="50%" stopColor="#FFFF00" stopOpacity="80%"></stop>
+            <stop offset="100%" stopColor="#FFFF00" stopOpacity="0%"></stop>
           </linearGradient>
           <linearGradient id="shine-gradient">
             <stop offset="0%" stopColor="white" stopOpacity="0%"></stop>
@@ -155,13 +155,13 @@ export const ChatBox: React.FC<ChatBoxProps> = (props) => {
       {props.selectedElement && (
         <div className="flex mx-1.5 gap-2 items-center justify-between rounded-lg rounded-b-none border border-b-none border-bolt-elements-borderColor text-bolt-elements-textPrimary flex py-1 px-2.5 font-medium text-xs">
           <div className="flex gap-2 items-center lowercase">
-            <code className="bg-accent-500 rounded-4px px-1.5 py-1 mr-0.5 text-white">
+            <code className="bg-accent-500 rounded-4px px-1.5 py-1 mr-0.5 text-gray-950">
               {props?.selectedElement?.tagName}
             </code>
             selected for inspection
           </div>
           <button
-            className="bg-transparent text-accent-500 pointer-auto"
+            className="bg-transparent text-bolt-elements-item-contentAccent pointer-auto"
             onClick={() => props.setSelectedElement?.(null)}
           >
             Clear
@@ -238,7 +238,9 @@ export const ChatBox: React.FC<ChatBoxProps> = (props) => {
             minHeight: props.TEXTAREA_MIN_HEIGHT,
             maxHeight: props.TEXTAREA_MAX_HEIGHT,
           }}
-          placeholder={props.chatMode === 'build' ? 'How can Bolt help you today?' : 'What would you like to discuss?'}
+          placeholder={
+            props.chatMode === 'build' ? 'How can Autocode help you today?' : 'What would you like to discuss?'
+          }
           translate="no"
         />
         <ClientOnly>

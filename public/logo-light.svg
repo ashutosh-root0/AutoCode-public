@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 44" fill="none" role="img" aria-label="Autocode">
+  <!-- Hello Yellow accent mark with black code glyph (Autodesk brand palette) -->
+  <rect x="2" y="5" width="34" height="34" rx="6" fill="#FFFF00" />
+  <g stroke="#000000" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="14,16 8,22 14,28" />
+    <polyline points="24,16 30,22 24,28" />
+    <line x1="21" y1="14" x2="17" y2="30" />
+  </g>
+  <text x="46" y="30" font-family="'Artifakt Legend', Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="-0.4" fill="#000000">Autocode</text>
+</svg>

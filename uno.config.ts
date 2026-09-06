@@ -34,18 +34,25 @@ const BASE_COLORS = {
     900: '#171717',
     950: '#0A0A0A',
   },
+  /**
+   * Brand accent — Autodesk "Hello Yellow" (#FFFF00), the signature brand color.
+   * Yellow is used for FILLS only (buttons, focus, highlights) paired with black
+   * text/icons; per Autodesk guidelines yellow must never be text on white (WCAG
+   * fail), so accent TEXT tokens fall back to the dark shades (800+) on light
+   * surfaces. Darker shades (700-950) are official Hello Yellow shades.
+   */
   accent: {
-    50: '#F8F5FF',
-    100: '#F0EBFF',
-    200: '#E1D6FF',
-    300: '#CEBEFF',
-    400: '#B69EFF',
-    500: '#9C7DFF',
-    600: '#8A5FFF',
-    700: '#7645E8',
-    800: '#6234BB',
-    900: '#502D93',
-    950: '#2D1959',
+    50: '#FFFFE5',
+    100: '#FFFFB8',
+    200: '#FFFF8A',
+    300: '#FFFF5C',
+    400: '#FFFF2E',
+    500: '#FFFF00',
+    600: '#CCCC00',
+    700: '#999900',
+    800: '#666600',
+    900: '#4D4D00',
+    950: '#333300',
   },
   green: {
     50: '#F0FDF4',
@@ -84,6 +91,24 @@ const BASE_COLORS = {
     800: '#991B1B',
     900: '#7F1D1D',
     950: '#450A0A',
+  },
+  /**
+   * Legacy `purple-*` utilities across the settings UI are remapped to the
+   * Autodesk "Hello Yellow" brand ramp so the entire secondary accent is on-brand
+   * without editing dozens of components. Kept in sync with `accent` above.
+   */
+  purple: {
+    50: '#FFFFE5',
+    100: '#FFFFB8',
+    200: '#FFFF8A',
+    300: '#FFFF5C',
+    400: '#FFFF2E',
+    500: '#FFFF00',
+    600: '#CCCC00',
+    700: '#999900',
+    800: '#666600',
+    900: '#4D4D00',
+    950: '#333300',
   },
 };
 

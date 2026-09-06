@@ -1,5 +1,5 @@
 {
-  "name": "bolt",
+  "name": "autocode",
   "description": "An AI Agent",
   "private": true,
   "license": "MIT",
@@ -7,8 +7,8 @@
   "type": "module",
   "version": "1.0.0",
   "author": {
-    "name": "bolt.diy team",
-    "email": "maintainers@bolt.diy"
+    "name": "Autocode team",
+    "email": "maintainers@autocode.app"
   },
   "scripts": {
     "deploy": "npm run build && wrangler pages deploy",

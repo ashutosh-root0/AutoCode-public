@@ -98,7 +98,7 @@ const FileModifiedDropdown = memo(
               <Popover.Button className="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-bolt-elements-background-depth-2 hover:bg-bolt-elements-background-depth-3 transition-colors text-bolt-elements-item-contentDefault">
                 <span>File Changes</span>
                 {hasChanges && (
-                  <span className="w-5 h-5 rounded-full bg-accent-500/20 text-accent-500 text-xs flex items-center justify-center border border-accent-500/30">
+                  <span className="w-5 h-5 rounded-full bg-accent-500/20 text-bolt-elements-item-contentAccent text-xs flex items-center justify-center border border-accent-500/30">
                     {modifiedFiles.length}
                   </span>
                 )}
@@ -261,7 +261,7 @@ const FileModifiedDropdown = memo(
                         onClick={() => {
                           navigator.clipboard.writeText(filteredFiles.map(([filePath]) => filePath).join('\n'));
                           toast('File list copied to clipboard', {
-                            icon: <div className="i-ph:check-circle text-accent-500" />,
+                            icon: <div className="i-ph:check-circle text-bolt-elements-item-contentAccent" />,
                           });
                         }}
                         className="w-full flex items-center justify-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-bolt-elements-background-depth-1 hover:bg-bolt-elements-background-depth-3 transition-colors text-bolt-elements-textTertiary hover:text-bolt-elements-textPrimary"
@@ -415,7 +415,7 @@ export const Workbench = memo(
                         <DropdownMenu.Root>
                           <DropdownMenu.Trigger
                             disabled={isSyncing || streaming}
-                            className="rounded-md items-center justify-center [&:is(:disabled,.disabled)]:cursor-not-allowed [&:is(:disabled,.disabled)]:opacity-60 px-3 py-1.5 text-xs bg-accent-500 text-white hover:text-bolt-elements-item-contentAccent [&:not(:disabled,.disabled)]:hover:bg-bolt-elements-button-primary-backgroundHover outline-accent-500 flex gap-1.7"
+                            className="rounded-md items-center justify-center [&:is(:disabled,.disabled)]:cursor-not-allowed [&:is(:disabled,.disabled)]:opacity-60 px-3 py-1.5 text-xs bg-accent-500 text-gray-950 hover:text-bolt-elements-item-contentAccent [&:not(:disabled,.disabled)]:hover:bg-bolt-elements-button-primary-backgroundHover outline-accent-500 flex gap-1.7"
                           >
                             {isSyncing ? 'Syncing...' : 'Sync'}
                             <span className={classNames('i-ph:caret-down transition-transform')} />
@@ -458,7 +458,7 @@ export const Workbench = memo(
                           onClick={() => {
                             workbenchStore.toggleTerminal(!workbenchStore.showTerminal.get());
                           }}
-                          className="rounded-md items-center justify-center [&:is(:disabled,.disabled)]:cursor-not-allowed [&:is(:disabled,.disabled)]:opacity-60 px-3 py-1.5 text-xs bg-accent-500 text-white hover:text-bolt-elements-item-contentAccent [&:not(:disabled,.disabled)]:hover:bg-bolt-elements-button-primary-backgroundHover outline-accent-500 flex gap-1.7"
+                          className="rounded-md items-center justify-center [&:is(:disabled,.disabled)]:cursor-not-allowed [&:is(:disabled,.disabled)]:opacity-60 px-3 py-1.5 text-xs bg-accent-500 text-gray-950 hover:text-bolt-elements-item-contentAccent [&:not(:disabled,.disabled)]:hover:bg-bolt-elements-button-primary-backgroundHover outline-accent-500 flex gap-1.7"
                         >
                           <div className="i-ph:terminal" />
                           Toggle Terminal

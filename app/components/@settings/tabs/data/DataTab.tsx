@@ -290,7 +290,11 @@ export function DataTab() {
             <Card>
               <CardHeader>
                 <div className="flex items-center mb-2">
-                  <motion.div className="text-accent-500 mr-2" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                  <motion.div
+                    className="text-bolt-elements-item-contentAccent mr-2"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
                     <div className="i-ph-download-duotone w-5 h-5" />
                   </motion.div>
                   <CardTitle className="text-lg group-hover:text-bolt-elements-item-contentAccent transition-colors">
@@ -354,7 +358,11 @@ export function DataTab() {
             <Card>
               <CardHeader>
                 <div className="flex items-center mb-2">
-                  <motion.div className="text-accent-500 mr-2" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                  <motion.div
+                    className="text-bolt-elements-item-contentAccent mr-2"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
                     <div className="i-ph:list-checks w-5 h-5" />
                   </motion.div>
                   <CardTitle className="text-lg group-hover:text-bolt-elements-item-contentAccent transition-colors">
@@ -391,7 +399,11 @@ export function DataTab() {
             <Card>
               <CardHeader>
                 <div className="flex items-center mb-2">
-                  <motion.div className="text-accent-500 mr-2" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                  <motion.div
+                    className="text-bolt-elements-item-contentAccent mr-2"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
                     <div className="i-ph-upload-duotone w-5 h-5" />
                   </motion.div>
                   <CardTitle className="text-lg group-hover:text-bolt-elements-item-contentAccent transition-colors">
@@ -476,7 +488,11 @@ export function DataTab() {
           <Card>
             <CardHeader>
               <div className="flex items-center mb-2">
-                <motion.div className="text-accent-500 mr-2" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <motion.div
+                  className="text-bolt-elements-item-contentAccent mr-2"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                   <div className="i-ph-download-duotone w-5 h-5" />
                 </motion.div>
                 <CardTitle className="text-lg group-hover:text-bolt-elements-item-contentAccent transition-colors">
@@ -513,7 +529,11 @@ export function DataTab() {
           <Card>
             <CardHeader>
               <div className="flex items-center mb-2">
-                <motion.div className="text-accent-500 mr-2" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <motion.div
+                  className="text-bolt-elements-item-contentAccent mr-2"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                   <div className="i-ph-filter-duotone w-5 h-5" />
                 </motion.div>
                 <CardTitle className="text-lg group-hover:text-bolt-elements-item-contentAccent transition-colors">
@@ -550,7 +570,11 @@ export function DataTab() {
           <Card>
             <CardHeader>
               <div className="flex items-center mb-2">
-                <motion.div className="text-accent-500 mr-2" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <motion.div
+                  className="text-bolt-elements-item-contentAccent mr-2"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                   <div className="i-ph-upload-duotone w-5 h-5" />
                 </motion.div>
                 <CardTitle className="text-lg group-hover:text-bolt-elements-item-contentAccent transition-colors">
@@ -634,7 +658,11 @@ export function DataTab() {
           <Card>
             <CardHeader>
               <div className="flex items-center mb-2">
-                <motion.div className="text-accent-500 mr-2" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <motion.div
+                  className="text-bolt-elements-item-contentAccent mr-2"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                   <div className="i-ph-file-text-duotone w-5 h-5" />
                 </motion.div>
                 <CardTitle className="text-lg group-hover:text-bolt-elements-item-contentAccent transition-colors">
@@ -671,7 +699,11 @@ export function DataTab() {
           <Card>
             <CardHeader>
               <div className="flex items-center mb-2">
-                <motion.div className="text-accent-500 mr-2" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <motion.div
+                  className="text-bolt-elements-item-contentAccent mr-2"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                   <div className="i-ph-upload-duotone w-5 h-5" />
                 </motion.div>
                 <CardTitle className="text-lg group-hover:text-bolt-elements-item-contentAccent transition-colors">
